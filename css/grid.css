@@ -1,0 +1,64 @@
+html {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    background: #2196F3;
+    flex-wrap: wrap;
+}
+
+iframe{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-display: flex;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    gap: 20px;
+    display: flex;
+
+}
+
+.entrada-blog a {
+    display: flex;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-display: flex;
+}
+
+@media (min-width:480px) {
+    .tres-columnas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+    .entrada-blog {
+        flex-basis: calc(33.3% - 1rem);
+        /*calc() hace un cálculo matemático*/
+        /*Ocupa el 33% del contenedor - 1 rem para dar espacio entre columnas*/
+    }
+}
